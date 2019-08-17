@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe Board</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<h1>Tic Tac Toe</h1>
+
+	<div class = "playerinfo">
+		<p>Game will start after PLAYER 1 chooses 'X' or '0'</p>
+		<p>Write Player Name below :</p>
+		<div class = "block1">
+			<input type = "text" id="p1" placeholder="PLAYER 1">
+		</div>
+		<div class = "block1">
+			<input type = "text" id="p2" placeholder="PLAYER 2">
+		</div>
+		<p>PLAYER 1 will be : <span id = "p1x">X</span> or <span id="p10">0</span></p>
+	</div>
+
+	<div class = "scrdisp">
+		<div class = "player1">
+			<p id = "pl1name">PLAYER 1</p>
+			<p class = "disp" id = "p1sc">0</p>
+		</div>
+		<div class = "player2">
+			<p id = "pl2name">PLAYER 2</p>
+			<p class = "disp" id = "p2sc">0</p>
+		</div>
+	</div>
+
+	<div>
+		<table id = "grid">
+			<tr>
+				<th class = "col1"></th>
+				<th class = "col2"></th>
+				<th class = "col1"></th>
+			</tr>
+			<tr>
+				<th class = "col2"></th>
+				<th class = "col1"></th>
+				<th class = "col2"></th>
+			</tr>
+			<tr>
+				<th class = "col1"></th>
+				<th class = "col2"></th>
+				<th class = "col1"></th>
+			</tr>				
+		</table>
+
+	</div>
+
+	<div class = "winner">
+		<p id = "result">RESULTS.</p>
+		<p>Reset - Boards gets reseted and same players play the game, scores will be added.</p>
+		<p>New Game - New Players can play board and scores will get reseted.</p>
+		<button id="reset">RESET !</button>
+		<button id="newgame">NEW GAME !</button>
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
